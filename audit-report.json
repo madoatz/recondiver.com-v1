@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-07-09T02:38:38.256Z",
+  "htmlPages": 40,
+  "issues": [],
+  "externalOrigins": [
+    {
+      "origin": "https://cdnjs.cloudflare.com",
+      "references": 195
+    },
+    {
+      "origin": "https://my.divessi.com",
+      "references": 82
+    },
+    {
+      "origin": "https://lin.ee",
+      "references": 79
+    },
+    {
+      "origin": "https://fb.com",
+      "references": 79
+    },
+    {
+      "origin": "https://www.naui.org",
+      "references": 79
+    },
+    {
+      "origin": "http://www.youtube.com",
+      "references": 59
+    },
+    {
+      "origin": "http://www.facebook.com",
+      "references": 43
+    },
+    {
+      "origin": "https://www.facebook.com",
+      "references": 42
+    },
+    {
+      "origin": "https://www.instagram.com",
+      "references": 41
+    },
+    {
+      "origin": "https://www.google.com",
+      "references": 40
+    },
+    {
+      "origin": "http://instagram.com",
+      "references": 40
+    },
+    {
+      "origin": "https://divessi.com",
+      "references": 39
+    },
+    {
+      "origin": "https://www.padi.com",
+      "references": 39
+    },
+    {
+      "origin": "http://www.tmd.go.th",
+      "references": 39
+    },
+    {
+      "origin": "http://www.timeanddate.com",
+      "references": 39
+    },
+    {
+      "origin": "https://www.windy.com",
+      "references": 39
+    },
+    {
+      "origin": "https://www.shinystat.com",
+      "references": 39
+    },
+    {
+      "origin": "https://www.readyplanet.com",
+      "references": 39
+    },
+    {
+      "origin": "https://www.youtube.com",
+      "references": 18
+    },
+    {
+      "origin": "https://assets.pinterest.com",
+      "references": 10
+    },
+    {
+      "origin": "https://connect.facebook.net",
+      "references": 10
+    },
+    {
+      "origin": "http://www.fb.com",
+      "references": 7
+    },
+    {
+      "origin": "http://www.instagram.com",
+      "references": 2
+    },
+    {
+      "origin": "https://www.fb.com",
+      "references": 1
+    },
+    {
+      "origin": "http://line.me",
+      "references": 1
+    },
+    {
+      "origin": "https://g.page",
+      "references": 1
+    },
+    {
+      "origin": "https://docs.google.com",
+      "references": 1
+    }
+  ]
+}
