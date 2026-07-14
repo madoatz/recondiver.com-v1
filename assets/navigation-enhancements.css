@@ -1,0 +1,19 @@
+/* Shared expandable navigation for desktop hover and mobile tap. */
+.nav-subnav-toggle { appearance: none; border: 0; background: transparent; color: currentColor; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: .35rem .45rem; line-height: 1; }
+.nav-subnav-toggle::after { content: "⌄"; font-size: .95em; transition: transform .18s ease; }
+.has-subnav.is-subnav-open > .nav-subnav-toggle::after { transform: rotate(180deg); }
+@media (min-width: 768px) {
+  .topnav > li.has-subnav { position: relative; }
+  .topnav > li.has-subnav > ul.subnav { display: none !important; position: absolute !important; z-index: 10050 !important; left: 0 !important; top: 100% !important; min-width: 15rem; margin: 0 !important; padding: .45rem 0 !important; background: #fff; box-shadow: 0 .7rem 1.6rem rgba(0, 25, 50, .22); }
+  .topnav > li.has-subnav:hover > ul.subnav, .topnav > li.has-subnav.is-subnav-open > ul.subnav { display: block !important; }
+  .topnav > li.has-subnav > ul.subnav > li { display: block !important; float: none !important; width: 100% !important; }
+  .topnav > li.has-subnav > ul.subnav > li > a { display: block !important; white-space: normal; }
+}
+@media (max-width: 767px) {
+  .slidemenu li.has-subnav { position: relative; }
+  .slidemenu li.has-subnav > ul.subnav { display: none !important; position: static !important; float: none !important; width: auto !important; min-width: 0 !important; margin: 0 .6rem .5rem !important; padding: .25rem 0 !important; opacity: 1 !important; visibility: visible !important; background: rgba(255,255,255,.08); box-shadow: none !important; }
+  .slidemenu li.has-subnav.is-subnav-open > ul.subnav { display: block !important; }
+  .slidemenu li.has-subnav > ul.subnav > li { display: block !important; float: none !important; width: 100% !important; }
+  .slidemenu li.has-subnav > ul.subnav > li > a { display: block !important; padding-left: 1.15rem !important; }
+  .slidemenu .nav-subnav-toggle { position: absolute; right: .25rem; top: .15rem; min-width: 2.5rem; min-height: 2.5rem; }
+}
