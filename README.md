@@ -1,51 +1,52 @@
 # Recon Diver static website
 
-Static export retaining every original public page URL from recondiver.com.
+Static export with a clean, stable URL structure.
 
-## Structure
+## URL structure
 
-- Original public URL folders are retained, including numeric legacy paths, to keep previously shared customer links working.
-- `assets/` contains images, CSS, fonts, and front-facing assets.
-- `vendor/` contains compatibility libraries used by the original static pages.
+- `/about/`, `/instructors/`, `/pool-service/`, `/map/`, `/schedule/`, `/videos/`
+- `/courses/` groups courses by level and specialty
+- `/articles/` groups all articles
+- `/trips/` groups diving trips
 
 ## Published page paths
 
-- `/14794027/-เกี่ยวกับเรา-/`
-- `/14804258/ครูฝึก/`
-- `/14804269/บริการสระ/`
-- `/14804292/บทความ/`
-- `/14804293/แผนที่/`
-- `/14808158/หลักสูตรเริ่มต้น/`
-- `/14808160/open-water/`
-- `/14808160/open-water-scuba-diver-เริ่มต้น/`
-- `/14808161/naui-advanced-open-water-scuba-diver/`
-- `/14904809/รวมทริป/`
-- `/14913275/personal-filter/`
-- `/14913337/อาการ-panic/`
-- `/15060976/วิชาหนีตาย/`
-- `/15099654/ตารางสอน/`
-- `/15143276/-วีดีโอ-/`
-- `/15143277/แนะนำการเรียนการสอน/`
-- `/17445011/advanced-specialty-ขั้นสูงและทักษะพิเศษ/`
-- `/17445013/divemaster-upper-level-ระดับโปร/`
-- `/17445098/open-water-diver-สถาบัน-ssi/`
-- `/17445099/open-water-scuba-diver-สถาบัน-naui/`
-- `/17445101/หลักสูตรเรียนต่อ/`
-- `/17445251/ssi-advanced-open-water-diver/`
-- `/17446032/ssi-photo-video-specialty/`
-- `/17446078/ssi-deep-diving-specialty/`
-- `/17446079/ssi-enriched-air-nitrox-specialty/`
-- `/17446080/ssi-wreck-diving-specialty/`
-- `/17446082/ssi-diver-stress-rescue-specialty/`
-- `/17446083/ssi-science-of-diving-specialty/`
-- `/17446084/ssi-night-limited-visibility-specialty/`
-- `/17446090/react-right-first-aid-ปฐมพยาบาล/`
-- `/17446213/ssi-altitude-diving-specialty/`
-- `/17446236/ssi-perfect-buoyancy-specialty/`
-- `/17446240/ssi-navigation-specialty/`
-- `/17446245/ssi-search-recovery-specialty/`
-- `/17446254/ssi-computer-diving-specialty/`
-- `/17446266/ssi-marine-ecology/`
-- `/17447764/refresh-skills/`
-- `/17469253/scuba-trip/`
+- `/about/`
+- `/instructors/`
+- `/pool-service/`
+- `/articles/`
+- `/map/`
+- `/courses/beginner/`
+- `/courses/beginner/open-water/`
+- `/courses/beginner/open-water-scuba-diver/`
+- `/courses/continuing/naui-advanced-open-water-scuba-diver/`
+- `/trips/`
+- `/articles/personal-filter/`
+- `/articles/panic/`
+- `/articles/survival/`
+- `/schedule/`
+- `/videos/`
+- `/articles/teaching-guide/`
+- `/courses/advanced-specialty/`
+- `/courses/professional/divemaster/`
+- `/courses/beginner/ssi-open-water-diver/`
+- `/courses/beginner/naui-open-water-scuba-diver/`
+- `/courses/continuing/`
+- `/courses/continuing/ssi-advanced-open-water-diver/`
+- `/courses/advanced-specialty/photo-video/`
+- `/courses/advanced-specialty/deep-diving/`
+- `/courses/advanced-specialty/enriched-air-nitrox/`
+- `/courses/advanced-specialty/wreck-diving/`
+- `/courses/advanced-specialty/diver-stress-rescue/`
+- `/courses/advanced-specialty/science-of-diving/`
+- `/courses/advanced-specialty/night-limited-visibility/`
+- `/courses/advanced-specialty/react-right-first-aid/`
+- `/courses/advanced-specialty/altitude-diving/`
+- `/courses/advanced-specialty/perfect-buoyancy/`
+- `/courses/advanced-specialty/navigation/`
+- `/courses/advanced-specialty/search-recovery/`
+- `/courses/advanced-specialty/computer-diving/`
+- `/courses/advanced-specialty/marine-ecology/`
+- `/courses/refresh-skills/`
+- `/trips/scuba-trip/`
 - `/`

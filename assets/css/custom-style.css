@@ -7,11 +7,11 @@
     font-weight: normal;
     font-style:  normal;
     font-display: swap;
-    src: url('/vendor/flexi/fonts/circular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/vendor/flexi/fonts/circular-webfont.eot/'); /* IE9 Compat Modes */
     src: local('Circular'),
-         url('/vendor/flexi/fonts/circular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/vendor/flexi/fonts/circular-webfont.woff') format('woff'), /* Modern browsers */
-         url('/vendor/flexi/fonts/circular-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+         url('/vendor/flexi/fonts/circular-webfont.eot/?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/vendor/flexi/fonts/circular-webfont.woff/') format('woff'), /* Modern browsers */
+         url('/vendor/flexi/fonts/circular-webfont.ttf/') format('truetype'); /* Safari, Android, iOS */
 }
 
 
@@ -21,7 +21,7 @@ body {
     background-color: #999999;
 }
 #body-bg.onload{
-    background-image: url(/assets/images/background/main/crop-1728975139731.jpg?1730776026);
+    background-image: url(/assets/images/background/main/crop-1728975139731.jpg/?1730776026);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -61,7 +61,7 @@ body {
     background-color: rgba(115, 209, 219, 0); 
 	background-image: none;
 	-pie-background: rgba(115, 209, 219, 0);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 
 }
 
@@ -87,7 +87,7 @@ body {
     position : relative;
     z-index: 1; /*for fix bug z-index in IE10*/
     -pie-background: rgba(90, 207, 250, 0.5);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 /* :root > for target IE9 and higher , \9 > for targer IE9 and lower */
 :root #header > #topbar {
@@ -105,7 +105,7 @@ body {
     -ms-filter: ""\9;
     position : relative;
     -pie-background: rgba(90, 207, 250, 0.5);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 /* :root > for target IE9 and higher , \9 > for targer IE9 and lower */
 :root #sidebar  {
@@ -121,7 +121,7 @@ ul.sidenav > li {
 	background-color: rgba(255, 255, 255, 1);
 	background-image: none;
 	-pie-background: rgba(255, 255, 255, 1);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 :root ul.sidenav > li {
     filter: none\9;
@@ -134,7 +134,7 @@ ul.sidenav > li:hover {
     background-color: rgba(255, 255, 255, 1);
     background-image: none;
     -pie-background: rgba(255, 255, 255, 1);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 ul.sidenav > li > a {
     font-family: "Circular";
@@ -177,7 +177,7 @@ ul.sidenav > li > ul.subnav {
     background-color: #ffffff; /* for fallback */
     background-color: rgba(255, 255, 255, 1);
     -pie-background: rgba(255, 255, 255, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 
 ul.sidenav > li > ul.subnav > li { 
@@ -185,14 +185,14 @@ ul.sidenav > li > ul.subnav > li {
 	background-color: rgba(255, 255, 255, 1);
 	background-image: none;
 	-pie-background: rgba(255, 255, 255, 1);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 	border-top: solid 1px #5acffa; 
 }
 ul.sidenav > li > ul.subnav > li:hover {
     background-color: #ffffff; /* for fallback */
     background-color: rgba(255, 255, 255, 1);
     -pie-background: rgba(255, 255, 255, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 ul.sidenav > li > ul.subnav > li > a {
     font-family: "Circular";
@@ -223,7 +223,7 @@ ul.topnav > li {
     background-color: rgba(145, 18, 18, 1);
     background-image: none;
     -pie-background: rgba(145, 18, 18, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc); 
+    behavior: url(/vendor/helper/PIE/PIE.htc/); 
 }
 
 :root ul.topnav > li {
@@ -236,7 +236,7 @@ ul.topnav > li:hover:not(.nav-add-button) {
 	background-color: rgba(230, 5, 5, 1);
 	background-image: none;
 	-pie-background: rgba(230, 5, 5, 1);
-	behavior: url(/vendor/helper/PIE/PIE.htc); 
+	behavior: url(/vendor/helper/PIE/PIE.htc/); 
 }
 ul.topnav > li.nav-add-button > a {
     line-height: 18px;
@@ -281,7 +281,7 @@ ul.topnav > li > ul.subnav {
     background-color: #e60505; /* for fallback */
     background-color: rgba(230, 5, 5, 1);
     -pie-background: rgba(230, 5, 5, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 
 ul.topnav > li > ul.subnav > li,
@@ -290,7 +290,7 @@ ul.topnav > li > ul.subnav > div > div > li {
     background-color: rgba(0, 0, 0, 1);
     background-image: none;
     -pie-background: rgba(0, 0, 0, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc); 
+    behavior: url(/vendor/helper/PIE/PIE.htc/); 
 }
 
 :root ul.topnav > li > ul.subnav > li,
@@ -305,7 +305,7 @@ ul.topnav > li > ul.subnav > div > div > li:hover {
 	background-color: rgba(255, 74, 86, 1);
 	background-image: none;
 	-pie-background: rgba(255, 74, 86, 1);
-	behavior: url(/vendor/helper/PIE/PIE.htc); 
+	behavior: url(/vendor/helper/PIE/PIE.htc/); 
 }
 ul.topnav > li > ul.subnav > li > a,
 ul.topnav > li > ul.subnav > div > div > li > a {
@@ -332,7 +332,7 @@ ul.midnav {
     //background-color: #999999; /* for IE7 */
     border-color: #17606b;
     -pie-background: rgba(153, 153, 153, 0);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 
 ul.midnav > li {
@@ -340,14 +340,14 @@ ul.midnav > li {
 	background-color: rgba(153, 153, 153, 0);
 	background-image: none;
 	-pie-background: rgba(153, 153, 153, 0);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 
 ul.midnav > li:hover {
 	background-color: #999999; /* for fallback */
 	background-color: rgba(153, 153, 153, 0);
 	-pie-background: rgba(153, 153, 153, 0);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 ul.midnav > li > a {
     font-family: "Circular";
@@ -377,7 +377,7 @@ ul.slidemenu > li > ul.subnav > li {
     background-color: rgba(145, 18, 18, 1);
     background-image: none;
     -pie-background: rgba(145, 18, 18, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 ul.slidemenu > li.blank {
     background-color: #ffffff; /* inverted color */
@@ -404,7 +404,7 @@ ul.slidemenu > li > ul.subnav > li:hover {
     background-color: rgba(230, 5, 5, 1);
     background-image: none;
     -pie-background: rgba(230, 5, 5, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 
 ul.slidemenu > li > i:active,
@@ -460,7 +460,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
     background-color: #e8f5fa; /* for fallback */
     background-color: rgba(232, 245, 250, 1);
     -pie-background: rgba(232, 245, 250, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 #content .breadcrumb {
     font-family: "Circular";
@@ -586,7 +586,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
 			    -pie-background: rgba(230, 5, 5, 0);
 			    filter: none\9;
 			    -ms-filter: ""\9;
-			    behavior: url(/vendor/helper/PIE/PIE.htc);
+			    behavior: url(/vendor/helper/PIE/PIE.htc/);
 			}
 			
 			#content .order-button input#btn_order{
@@ -604,7 +604,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
 			    border-color: #e60505;
 			    text-shadow: 0 1px 1px #ffffff;
 			    -pie-background: rgba(230, 5, 5, 0);
-			    behavior: url(/vendor/helper/PIE/PIE.htc);
+			    behavior: url(/vendor/helper/PIE/PIE.htc/);
 			}
 			
 #fancybox-title:not(.fancybox-title-float) {
@@ -634,7 +634,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
                 position : relative;
                 z-index: 0;
                 -pie-background: rgba(90, 207, 250, 1);
-                behavior: url(/vendor/helper/PIE/PIE.htc);
+                behavior: url(/vendor/helper/PIE/PIE.htc/);
             }
             /* :root > for target IE9 and higher , \9 > for targer IE9 and lower */
             :root .showcase .portlet-header {
@@ -859,7 +859,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
     background-color: #e8f5fa; /* for fallback */
     background-color: rgba(232, 245, 250, 1);
     -pie-background: rgba(232, 245, 250, 1);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 #content-visit-history-container .portlet-header {
     color :#5acffa;
@@ -1260,7 +1260,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
 	border-color: #e60505;
 	text-shadow: 0 1px 1px #ffffff;
 	-pie-background: rgba(230, 5, 5, 0);
-	behavior: url(/vendor/helper/PIE/PIE.htc);
+	behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 .checkout-form .shipping-title,
 .shipping-title {
@@ -1380,7 +1380,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
     background-color: #73d1db; /* for fallback */
     background-color: rgba(115, 209, 219, 0);
     -pie-background: rgba(115, 209, 219, 0);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 }
 #footer-text {
     font-family: "Circular";
@@ -1399,7 +1399,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
 	background-color: #73d1db; /* for fallback */
     background-color: rgba(115, 209, 219, 0);
     -pie-background: rgba(115, 209, 219, 0);
-    behavior: url(/vendor/helper/PIE/PIE.htc);
+    behavior: url(/vendor/helper/PIE/PIE.htc/);
 	font-family: "Circular";
     font-size: 20px;
     color: #ffffff;
@@ -1523,7 +1523,7 @@ ul.slidemenu > li > ul.subnav > li.slidemenu-back:hover > i {
             background-color: #e8f5fa; /* for fallback */
             background-color: rgba(232, 245, 250, 1);
             -pie-background: rgba(232, 245, 250, 1);
-            behavior: url(/vendor/helper/PIE/PIE.htc);
+            behavior: url(/vendor/helper/PIE/PIE.htc/);
         }
         #comment-tabs .ui-tabs-nav > li.ui-tabs-active > a {
             color:#17606b;

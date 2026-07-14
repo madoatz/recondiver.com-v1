@@ -419,10 +419,10 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] { -
   cursor: pointer;
 }
 #content .contact-form #btn-add-form > a {
-  background-image: url("/vendor/flexi/images/add-button.png");
+  background-image: url("/vendor/flexi/images/add-button.png/");
 }
 #content .contact-form #btn-edit-form > a {
-  background-image: url("/vendor/flexi/images/select-white.png");
+  background-image: url("/vendor/flexi/images/select-white.png/");
   background-position: 10px 10px;
 }
 #content .contact-form .button > a:hover {
@@ -1158,7 +1158,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] { -
 }
 .comment_delete > a {
   background-color: #000;
-  background-image: url(/vendor/flexi/images/trash-icon.png);
+  background-image: url(/vendor/flexi/images/trash-icon.png/);
   background-position: 5px center;
   background-repeat: no-repeat;
   border-radius: 3px 3px 3px 3px;
@@ -1752,7 +1752,7 @@ img {
 }
 #content .webboard > table tr td .delete_topic > a {
   background-color: #000;
-  background-image: url(/vendor/flexi/images/trash-icon.png);
+  background-image: url(/vendor/flexi/images/trash-icon.png/);
   background-position: 5px center;
   background-repeat: no-repeat;
   border-radius: 3px 3px 3px 3px;
@@ -1857,7 +1857,7 @@ img {
 }
 #newboard a {
   background-color: #000;
-  background-image: url("/vendor/flexi/images/add-button.png");
+  background-image: url("/vendor/flexi/images/add-button.png/");
   background-position: 5px center;
   background-repeat: no-repeat;
   border-radius: 3px 3px 3px 3px;
