@@ -7,14 +7,26 @@
     if (!submenu || !link || item.classList.contains('has-subnav')) return;
     item.classList.add('has-subnav');
     const alignSubmenu = () => {
-      submenu.classList.remove('submenu-align-right');
       if (coarse()) return;
-      if (submenu.getBoundingClientRect().right > window.innerWidth - 8) submenu.classList.add('submenu-align-right');
+      submenu.classList.remove('submenu-align-right');
+      submenu.style.removeProperty('--submenu-shift');
+      requestAnimationFrame(() => {
+        let rect = submenu.getBoundingClientRect();
+        if (rect.right > window.innerWidth - 8) {
+          submenu.classList.add('submenu-align-right');
+          rect = submenu.getBoundingClientRect();
+        }
+        const leftOverflow = 8 - rect.left;
+        const rightOverflow = rect.right - (window.innerWidth - 8);
+        const shift = leftOverflow > 0 ? leftOverflow : rightOverflow > 0 ? -rightOverflow : 0;
+        if (shift) submenu.style.setProperty('--submenu-shift', String(shift) + 'px');
+      });
     };
     const toggle = (open) => { const next = open ?? !item.classList.contains('is-subnav-open'); if (next) closeSiblings(item); item.classList.toggle('is-subnav-open', next); if (next) requestAnimationFrame(alignSubmenu); };
     link.addEventListener('click', (event) => { if (coarse() && !item.classList.contains('is-subnav-open')) { event.preventDefault(); toggle(true); } });
     item.addEventListener('pointerenter', () => { if (!coarse()) toggle(true); });
     item.addEventListener('pointerleave', () => { if (!coarse()) toggle(false); });
+    window.addEventListener('resize', () => { if (item.classList.contains('is-subnav-open')) alignSubmenu(); });
   }));
   document.querySelectorAll('details.nav-dropdown').forEach((details) => { details.addEventListener('pointerenter', () => { if (!coarse()) details.open = true; }); details.addEventListener('pointerleave', () => { if (!coarse()) details.open = false; }); });
   document.addEventListener('click', (event) => { if (!event.target.closest('.topnav, .slidemenu')) document.querySelectorAll('.is-subnav-open').forEach((item) => item.classList.remove('is-subnav-open')); });
