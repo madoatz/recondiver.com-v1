@@ -1,1 +1,0 @@
-# recondiver.com
