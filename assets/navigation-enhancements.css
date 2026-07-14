@@ -1,8 +1,10 @@
 /* Shared menu behavior: keep the original single triangle indicator. */
+html, body { overflow-x: clip; }
 @media (min-width: 768px) {
   .topnav > li.has-subnav { position: relative; }
-  .topnav > li.has-subnav > ul.subnav { display: none !important; position: absolute !important; z-index: 10050 !important; left: 0 !important; top: 100% !important; min-width: 15rem; margin: 0 !important; padding: .45rem 0 !important; background: #fff; box-shadow: 0 .7rem 1.6rem rgba(0,25,50,.22); }
+  .topnav > li.has-subnav > ul.subnav { display: none !important; position: absolute !important; z-index: 10050 !important; left: 0 !important; top: 100% !important; width: max-content !important; min-width: 15rem; max-width: calc(100vw - 1rem) !important; margin: 0 !important; padding: .45rem 0 !important; background: #fff; box-shadow: 0 .7rem 1.6rem rgba(0,25,50,.22); }
   .topnav > li.has-subnav:hover > ul.subnav, .topnav > li.has-subnav.is-subnav-open > ul.subnav { display: block !important; }
+  .topnav > li.has-subnav > ul.subnav.submenu-align-right { left: auto !important; right: 0 !important; }
   .topnav > li.has-subnav > ul.subnav > li { display: block !important; float: none !important; width: 100% !important; }
   .topnav > li.has-subnav > ul.subnav > li > a { display: block !important; white-space: normal; }
 }

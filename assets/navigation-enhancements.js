@@ -6,7 +6,12 @@
     const link = Array.from(item.children).find((node) => node.matches && node.matches('a'));
     if (!submenu || !link || item.classList.contains('has-subnav')) return;
     item.classList.add('has-subnav');
-    const toggle = (open) => { const next = open ?? !item.classList.contains('is-subnav-open'); if (next) closeSiblings(item); item.classList.toggle('is-subnav-open', next); };
+    const alignSubmenu = () => {
+      submenu.classList.remove('submenu-align-right');
+      if (coarse()) return;
+      if (submenu.getBoundingClientRect().right > window.innerWidth - 8) submenu.classList.add('submenu-align-right');
+    };
+    const toggle = (open) => { const next = open ?? !item.classList.contains('is-subnav-open'); if (next) closeSiblings(item); item.classList.toggle('is-subnav-open', next); if (next) requestAnimationFrame(alignSubmenu); };
     link.addEventListener('click', (event) => { if (coarse() && !item.classList.contains('is-subnav-open')) { event.preventDefault(); toggle(true); } });
     item.addEventListener('pointerenter', () => { if (!coarse()) toggle(true); });
     item.addEventListener('pointerleave', () => { if (!coarse()) toggle(false); });
